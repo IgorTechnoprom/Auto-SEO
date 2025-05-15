@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35919.96 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoSeo", "AutoSeo\AutoSeo.csproj", "{C2B50A3B-E3C8-4582-A0CF-0D50BE156E32}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AutoSeo", "AutoSeo", "{057AB4DF-63F8-415E-900C-8D39CC7AF9CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A878F890-9FC3-4065-9E1D-AA9A9B27E3C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoSeo.Api", "AutoSeo\src\AutoSeo.Api\AutoSeo.Api.csproj", "{16BABD5F-CABC-4B35-B9E1-A9DB6C79CECE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoSeo.Core", "AutoSeo\src\AutoSeo.Core\AutoSeo.Core.csproj", "{7F9738F9-65B6-41AE-89D3-94C8CFDDEF1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoSeo.Infrastructure", "AutoSeo\src\AutoSeo.Infrastructure\AutoSeo.Infrastructure.csproj", "{0BECE54D-48E6-45BE-9F8C-D599EE7AE31B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoSeo.Worker", "AutoSeo\src\AutoSeo.Worker\AutoSeo.Worker.csproj", "{BD90A3C9-D6BC-45EF-80FF-13CB5183CA26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +21,34 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C2B50A3B-E3C8-4582-A0CF-0D50BE156E32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C2B50A3B-E3C8-4582-A0CF-0D50BE156E32}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C2B50A3B-E3C8-4582-A0CF-0D50BE156E32}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C2B50A3B-E3C8-4582-A0CF-0D50BE156E32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16BABD5F-CABC-4B35-B9E1-A9DB6C79CECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16BABD5F-CABC-4B35-B9E1-A9DB6C79CECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16BABD5F-CABC-4B35-B9E1-A9DB6C79CECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16BABD5F-CABC-4B35-B9E1-A9DB6C79CECE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F9738F9-65B6-41AE-89D3-94C8CFDDEF1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F9738F9-65B6-41AE-89D3-94C8CFDDEF1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F9738F9-65B6-41AE-89D3-94C8CFDDEF1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F9738F9-65B6-41AE-89D3-94C8CFDDEF1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BECE54D-48E6-45BE-9F8C-D599EE7AE31B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BECE54D-48E6-45BE-9F8C-D599EE7AE31B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BECE54D-48E6-45BE-9F8C-D599EE7AE31B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BECE54D-48E6-45BE-9F8C-D599EE7AE31B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD90A3C9-D6BC-45EF-80FF-13CB5183CA26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD90A3C9-D6BC-45EF-80FF-13CB5183CA26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD90A3C9-D6BC-45EF-80FF-13CB5183CA26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD90A3C9-D6BC-45EF-80FF-13CB5183CA26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A571D000-BBDD-4EAB-95CC-1263A846D764}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A878F890-9FC3-4065-9E1D-AA9A9B27E3C1} = {057AB4DF-63F8-415E-900C-8D39CC7AF9CC}
+		{16BABD5F-CABC-4B35-B9E1-A9DB6C79CECE} = {A878F890-9FC3-4065-9E1D-AA9A9B27E3C1}
+		{7F9738F9-65B6-41AE-89D3-94C8CFDDEF1B} = {A878F890-9FC3-4065-9E1D-AA9A9B27E3C1}
+		{0BECE54D-48E6-45BE-9F8C-D599EE7AE31B} = {A878F890-9FC3-4065-9E1D-AA9A9B27E3C1}
+		{BD90A3C9-D6BC-45EF-80FF-13CB5183CA26} = {A878F890-9FC3-4065-9E1D-AA9A9B27E3C1}
 	EndGlobalSection
 EndGlobal

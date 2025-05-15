@@ -1,0 +1,6 @@
+@AutoSeo.Api_HostAddress = http://localhost:5170
+
+GET {{AutoSeo.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
